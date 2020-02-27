@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Delius+Swash+Caps&display=swap');
+:root {
+    --bg-color: #FFFB93;
+    --my-font: 'Delius Swash Caps', cursive;
+}
+
+body {
+    background-color: var(--bg-color);
+}
