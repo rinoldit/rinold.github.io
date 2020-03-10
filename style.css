@@ -170,7 +170,7 @@ footer {
     font-size: 1rem;
 }
 
-.link-container {
+.contact-container {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
@@ -179,4 +179,26 @@ footer {
     align-content: center;
     justify-content: center;
     justify-items: center;
+}
+
+.contact-container a {
+    text-decoration: none;
+    color: #fff;
+    height: 40px;
+    width: -webkit-fill-available;
+    /* text-align: center; */
+    display: inline-flex;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-out;
+}
+
+.contact-container a:hover {
+    transform: translateY(10px);
+}
+
+.contact-container a i {
+    font-size: 2rem;
 }
