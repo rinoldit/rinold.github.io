@@ -1,0 +1,204 @@
+/* Base reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* box-sizing and font sizing */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-y: scroll;
+    /* margin: 0; */
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    ;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(203, 157, 157);
+    outline: 1px solid rgb(0, 0, 0);
+    background: linear-gradient(45deg, #c5e8f3, #c8e4bc, brown);
+}
+
+header {
+    background: linear-gradient(to bottom, white 42%, #c5e8f3 93%);
+    display: flex;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    position: fixed;
+    top: 0;
+    left: 0;
+    grid-template-rows: 100%;
+    height: 50px;
+    justify-content: flex-end;
+}
+
+nav {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+    grid-template-rows: auto;
+    height: 100%;
+    display: grid;
+    position: relative;
+    grid-template-columns: 100px 100px repeat(auto-fit, minmax(100px, auto));
+    justify-items: center;
+    align-items: center;
+}
+
+main {}
+
+#PraiseOfGod {
+    background: #395339;
+    width: 100%;
+    color: #fff;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile {
+    height: 100vh;
+}
+
+.profile-image-container {
+    width: 30%;
+    height: 30%;
+}
+
+.profile-image-container img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+#profile {
+    background: linear-gradient(to right, #927a00f5, black 50%, #927a00f5);
+    color: #fff;
+    font-size: -webkit-xxx-large;
+}
+
+#profile-section {
+    background: repeating-linear-gradient(transparent, transparent 40px, black 40px, black 50px);
+    margin: auto;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#project-works {
+    text-align: center;
+    background: gray;
+    color: #fff;
+}
+
+#project-works section {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-template-rows: repeat(auto-fit, minmax(250px, 300px));
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.project-section-header {
+    padding: 2rem;
+    font-size: 2em;
+}
+
+.project-card {
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 50vh;
+    background: #303841;
+    color: #fff;
+}
+
+#contact {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact .title {
+    text-align: center;
+}
+
+#contact .title h1 {
+    font-size: 3rem;
+}
+
+#contact .title h6 {
+    font-size: 1rem;
+}
+
+.contact-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
+    grid-template-rows: repeat(auto-fill, minmax(100px, 100px));
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.contact-container a {
+    text-decoration: none;
+    color: #fff;
+    height: 40px;
+    width: -webkit-fill-available;
+    /* text-align: center; */
+    display: inline-flex;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-out;
+}
+
+.contact-container a:hover {
+    transform: translateY(10px);
+}
+
+.contact-container a i {
+    font-size: 2rem;
+}
